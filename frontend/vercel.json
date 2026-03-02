@@ -1,5 +1,11 @@
 {
+  "functions": {
+    "api/cv/generate.ts": {
+      "maxDuration": 30,
+      "includeFiles": "lib/templates/**"
+    }
+  },
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/api/:path*", "destination": "/api/:path*" }
   ]
 }
