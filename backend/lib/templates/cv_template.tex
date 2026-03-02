@@ -1,0 +1,62 @@
+%----------------------------------------------------------------------------------------
+%    PACKAGES AND DOCUMENT CONFIGURATION
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10.7pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{url}
+\usepackage{parskip}
+
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage[unicode, draft=false]{hyperref}
+\usepackage{fontawesome5}
+
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{6pt}
+
+\newenvironment{jobshort}[2]
+{
+\begin{tabularx}{\linewidth}{@{}l X r@{}}
+\textbf{#1} & \hfill &  #2 \\[3.75pt]
+\end{tabularx}
+}
+{}
+
+\newenvironment{joblong}[2]
+{
+\begin{tabularx}{\linewidth}{@{}l X r@{}}
+\textbf{#1} & \hfill &  #2 \\[3.75pt]
+\end{tabularx}
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+}
+{
+\end{itemize}
+\end{minipage}
+}
+
+%----------------------------------------------------------------------------------------
+%    BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+\pagestyle{empty}
+
+%% CV_CONTENT_HERE %%
+
+\end{document}

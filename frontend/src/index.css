@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-beige: #eeece2;
+  --color-beige-dark: #e0ddd0;
+  --color-terra: #da7756;
+  --color-terra-dark: #ae5630;
+  --color-ink: #3d3929;
+  --color-ink-light: #6b6555;
+  --font-heading: "DM Sans", sans-serif;
+  --font-body: "Source Serif 4", serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-beige);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
